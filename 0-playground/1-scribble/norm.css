@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --brand-color: #8E44AD;
+    --gen-padding: 3px;
+    --gen-margin: .63rem;
+    --gen-bord-rad: 3px;
+    --gen-backg-color: rgba(189, 195, 199, 0.2);
+    --gen-custom-color: rgba(149, 165, 166, 1);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: var(--gen-margin);
+    /* font-size: large; */
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+header {
+    background-color: var(--brand-color);
+}
+header .brand{
+    /*color: white;*/
+    padding: .6rem;
+    font-size: larger;
+    letter-spacing: 1px;
+}
+header .brand a{
+    text-decoration: none;
+    color: white;
+}
+
+
+article {
+    margin: var(--gen-margin);
+    background-color: var(--gen-backg-color);
+    border-radius: var(--gen-bord-rad);
+    border-left: 5px solid var(--brand-color);
+}
+article .cont-wrapper {
+    padding: 6px;
+
+}
+
+.item {
+    background: rebeccapurple;
+    font-size: 3rem;
+    padding: 2rem;
+    color: white;
+}
+
+.item2 {
+    background: skyblue;
+}
+
+.item3 {
+    background: orangered;
+}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 32px;
+    line-height: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: black;
+  }

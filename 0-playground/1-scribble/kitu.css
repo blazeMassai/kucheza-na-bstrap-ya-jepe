@@ -1,0 +1,43 @@
+.row-grid {
+  display: grid;
+  grid-template-columns: 10rem 10rem;
+  grid-template-rows: 5rem 5rem;
+  grid-auto-rows: 5rem;
+  gap: 5px;
+  padding: var(--gen-padding);
+}
+
+.row-flex {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid var(--brand-color);
+}
+
+.alert, .alert-success {
+  border: 1px solid black;
+  padding: 1rem;
+  color: white;
+  margin-bottom: 15px;
+}
+.alert-success {
+  background-color: #33FF57;
+}
+
+.ordered-item {
+  order: 3;
+}
+
+.ordered-item-def {
+  order: 3;
+}
+
+.lead-paragraph {
+  font-size: 20px;
+}
+
+.button {
+  color: blue;
+  border: 1px solid #4040ff;
+}
+
+/*# sourceMappingURL=kitu.css.map */

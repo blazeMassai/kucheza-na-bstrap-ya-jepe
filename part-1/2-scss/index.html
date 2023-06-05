@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiGMO - Basics</title>
+<!--    <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="assets/dist/scss/colors.css">
+    <link rel="stylesheet" href="assets/custom.css">
+</head>
+<body class="bg-gray-300  p-2">
+
+<!--navbar-->
+<nav class="navbar navbar-expand-lg" style="background-color: #008080;">
+    <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#"><span id="big">BIG</span><span id="mo">MO</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="elements.html">Elements</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="images.html">Images</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Components
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="forms.html">Forms</a></li>
+                        <li><a class="dropdown-item" href="utilities.html">Utilities</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled text-light">Disabled</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<!--end navbar-->
+
+
+<!--all other-->
+<div class="m-1">
+    <!--carousel-->
+    <div class="container-fluid">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner align-content-center">
+                <div class="carousel-item active">
+                    <img src="assets/img/h2r_2.jpg" class="d-block" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>KIWI H2R</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/h2r_3.jpg" class="d-block" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>H2R PODS</h5>
+                        <p>Some representative placeholder content for the 2nd slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/p1-mac.jpg" class="d-block" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>MAC P1</h5>
+                        <p>Some representative placeholder content for the 3rd slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!--end carousel-->
+
+    <!--breadcrumbs-->
+    <div class="container-fluid">
+        <nav aria-label="breadcrumb my-2">
+            <ol class="breadcrumb py-2">
+                <li class="breadcrumb-item h5"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item h5"><a href="#">Library</a></li>
+                <li class="breadcrumb-item active h5" aria-current="page">Data</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!--end breadcrumbs-->
+
+    <div class="container-fluid">
+
+        <div class="dropdown my-1">
+            <button type="button" class="btn bg-senary btn-lg text-white dropdown-toggle" id="dropdownButton" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownButton">
+                <a href="#" class="dropdown-item">First item</a>
+                <a href="#" class="dropdown-item">Second item</a>
+                <a href="#" class="dropdown-item">Third item</a>
+            </div>
+        </div>
+
+        <div class="btn btn-lg btn-success">
+            Play
+        </div>
+
+
+        <div class="row">
+            <div class="col">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="form-control col-3"/>
+            </div>
+
+            <div class="col">
+                <div class="alert alert-primary" role="alert">
+                    A simple primary alert—check it out!
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-2">
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <img src="assets/img/croc_30.png" class="img-thumbnail img-fluid" alt="croc">
+                    </div>
+                    <div class="col">
+                        <img src="assets/img/croc_30.png" class="img-thumbnail img-fluid" alt="p1">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <img src="assets/img/croc_30.png" class="img-thumbnail img-fluid" alt="croc">
+                    </div>
+                    <div class="col">
+                        <img src="assets/img/croc_30.png" class="img-thumbnail img-fluid" alt="croc">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-2">
+            <div class="col">
+                <h1>Shades of Gray</h1>
+                <div class="bg-gray-100">.bg-gray-100</div>
+                <div class="bg-gray-200">.bg-gray-200</div>
+                <div class="bg-gray-300">.bg-gray-300</div>
+                <div class="bg-gray-400">.bg-gray-400</div>
+                <div class="bg-gray-500">.bg-gray-500</div>
+                <div class="bg-gray-600">.bg-gray-600</div>
+                <div class="bg-gray-700">.bg-gray-700</div>
+                <div class="bg-gray-800">.bg-gray-800</div>
+                <div class="bg-gray-900">.bg-gray-900</div>
+            </div>
+
+            <div class="col">
+                <h1>Regular Colors</h1>
+                <div class="bg-blue">.bg-blue</div>
+                <div class="bg-indigo">.bg-indigo</div>
+                <div class="bg-purple">.bg-purple</div>
+                <div class="bg-pink">.bg-pink</div>
+                <div class="bg-red">.bg-red</div>
+                <div class="bg-orange">.bg-orange</div>
+                <div class="bg-yellow">.bg-yellow</div>
+                <div class="bg-green">.bg-green</div>
+                <div class="bg-teal">.bg-teal</div>
+                <div class="bg-cyan">.bg-cyan</div>
+                <div class="bg-dark">.bg-dark</div>
+                <div class="bg-white">.bg-white</div>
+                <div class="bg-gray">.bg-gray</div>
+                <div class="bg-gray-dark">.bg-gray-dark</div>
+            </div>
+        </div>
+
+        <div class="row my-2">
+            <div class="col">
+                <h1>Shades of Blue</h1>
+                <div class="bg-blue-100">.bg-blue-100</div>
+                <div class="bg-blue-200">.bg-blue-200</div>
+                <div class="bg-blue-300">.bg-blue-300</div>
+                <div class="bg-blue-400">.bg-blue-400</div>
+                <div class="bg-blue-500">.bg-blue-500</div>
+                <div class="bg-blue-600">.bg-blue-600</div>
+                <div class="bg-blue-700">.bg-blue-700</div>
+                <div class="bg-blue-800">.bg-blue-800</div>
+                <div class="bg-blue-900">.bg-blue-900</div>
+            </div>
+
+            <div class="col">
+                <h1>Mixed Colors</h1>
+                <div class="bg-blue text-white p-3">.bg-blue</div>
+                <div class="bg-green text-white p-3">.bg-green</div>
+                <div class="bg-saddlebrown text-white p-3">.bg-saddlebrown</div>
+                <div class="bg-primary text-white p-3">.bg-primary</div>
+            </div>
+
+        </div>
+
+        <div class="row my-2">
+            <div class="col">
+                <h1>Custom colors mapping</h1>
+                <div class="bg-tertiary p-3">.bg-tertiary</div>
+                <div class="bg-quaternary p-3">.bg-quaternary</div>
+                <div class="bg-quinary p-3">.bg-quinary</div>
+                <div class="bg-senary p-3">.bg-senary</div>
+                <div class="bg-septenary p-3">.bg-septenary</div>
+            </div>
+
+            <div class="col">
+                <h1>Custom color palettes</h1>
+                <div class="bg-primary p-3">.bg-primary</div>
+                <div class="bg-success p-3">.bg-success</div>
+                <div class="bg-info p-3">.bg-info</div>
+                <div class="bg-warning p-3">.bg-warning</div>
+                <div class="bg-danger p-3">.bg-danger</div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+</div>
+<!--end all others-->
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

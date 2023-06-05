@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+@import "../../scss/functions";
+@import "../../scss/variables";
+
+$enable-caret: true;
+$enable-rounded: false;
+$enable-shadows: true;
+$enable-gradients: true;
+$enable-transitions: true;
+//$enable-smooth-scroll: false;
+//$enable-grid-classes: false;
+//$enable-container-classes: false;
+//$enable-cssgrid: false;
+
+//$enable-button-pointers: false;
+
+//Responsive font sizes
+//$enable-rfs: false;
+
+
+//validation icons
+$enable-validation-icons: false;
+
+$enable-negative-margins: true;
+
+//$enable-important-utilities: false;
+
+//$enable-deprecation-messages: false;
+
+
+//SPACER VARIABLE
+//This variable specifies the default spacer value used by many other component variables in the _variables.scss file (as well as a few other places). It’s also used to programmatically generate the spacer utilities. Default value: 1rem
+
+//$spacer: 2rem;
+
+
+//CUSTOMIZING COLOR VARIABLES
+
+// Create background color classes from the "$grays" color map
+@each $color, $value in $grays {
+  .bg-gray-#{$color} {
+    background-color: $value;
+  }
+}
+
+@each $color, $value in $colors {
+  .bg-#{$color} {
+    background-color: $value;
+  }
+}
+
+//Tints and shades of blue
+@each $color, $value in $blues {
+  .bg-#{$color}{
+    background-color: $value;
+  }
+}
+
+
+//mixed-colors
+// Create a new "$mixed-colors" map
+$mixed-colors: (
+        "blue":$blue,
+        "green":green,
+        "saddlebrown": #8B4513,
+        "kijani-flani": #264653,
+        "red-flani": #F45050,
+        "primary": $primary,
+        "mysuccess": #2A9D8F,
+        "myinfo": #E9C46A,
+        "mywarning": #F4A261,
+        "mydanger": #E76F51
+);
+
+
+// Create color classes from the "$mixed-colors" map
+@each $color, $value in $mixed-colors{
+  .bg-#{$color} {
+    background-color: $value;
+  }
+}
+
+//Adding color to theme colors
+$custom-colors: (
+        "tertiary":$indigo,
+        "quaternary": $purple,
+        "quinary": $pink,
+        "senary": $orange,
+        "septenary": $teal
+);
+
+// Then Merge "$theme-colors" map and "$custom-colors" map
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+//REMOVING COLOR FROM THEME COLORS
+//To remove a color from the theme colors, we can use the map-remove() function built into the
+//sass:map module of Sass. below is the implementation
+
+//$theme-colors: map-remove($theme-colors, "info", "light", "dark");
+
+
+//DEFINING CUSTOM COLOR PALETTES
+
+//1. DEFINE COLOR PALETTE
+$primary: #264653;
+$success: #2A9D8F;
+$info: #E9C46A;
+$warning: #F4A261;
+$danger: #E76F51;
+
+// Remove "secondary" from "$theme-colors" map
+$theme-colors: map-remove($theme-colors, "secondary");
+
+//ELEMENTS START
+
+//SPECIFY THE BREAKPOINT SIZES
+$grid-breakpoints: (
+        xs: 0,
+        sm: 300px,
+        md: 600px,
+        lg: 900px,
+        xl: 1200px,
+        xxl: 1500px
+);
+
+//containers
+
+$container-max-widths: (
+        sm: 300px,
+        md: 500px,
+        lg: 700px,
+        xl: 900px,
+        xxl: 1100px
+);
+
+//GRIDS
+//The default number of columns in a grid is 12 and the default gutter width is 1.5rem.
+
+$grid-columns: 16;
+$grid-gutter-width: 1rem;
+
+
+
+//CUSTOMIZING CONTENT
+//TYPOGRAPHY
+//There are a lot of variables used to define the overall typography of Bootstrap 5. In fact, there are more
+//than 50 different variables.
+
+//$body-bg: $gray-200;
+//$body-color: $gray-700;
+
+
+// Basic typography styles
+//$font-family-base: 'Roboto', sans-serif;
+//$font-size-base: 1.5rem;
+//$line-height-base: 1.3;
+//$line-height-sm: 1;
+//
+//$font-family-base:  'PT Serif', serif;
+$font-size-base: 1.2rem;
+$line-height-base: 1.3;
+$line-height-sm: 1;
+
+// Link styles
+$link-color: $indigo;
+$link-decoration: none;
+$link-hover-color: shift-color($link-color, $link-shade-percentage);
+$link-hover-decoration: none;
+
+
+// Heading styles
+//$h1-font-size: $font-size-base * 3.5;
+//$h2-font-size: $font-size-base * 3;
+//$h3-font-size: $font-size-base * 2.5;
+//$h4-font-size: $font-size-base * 2;
+//$h5-font-size: $font-size-base * 1.5;
+//$h6-font-size: $font-size-base;
+//$headings-font-weight: $font-weight-bold;
+//$headings-line-height: $line-height-sm;
+//$headings-margin-bottom: $spacer;
+
+$h1-font-size: $font-size-base * 2.3;
+$h2-font-size: $font-size-base * 1.8;
+$h3-font-size: $font-size-base * 1.73;
+$h4-font-size: $font-size-base * 1.3;
+$h5-font-size: $font-size-base * 1.23;
+$h6-font-size: $font-size-base;
+//$headings-font-weight: $font-weight-bold;
+$headings-line-height: $line-height-sm;
+$headings-margin-bottom: $spacer;
+
+
+// Display styles
+$display-font-sizes: (
+        1: $h1-font-size * 1.5,
+        2: $h2-font-size * 1.5,
+        3: $h3-font-size * 1.5,
+        4: $h4-font-size * 1.5,
+        5: $h5-font-size * 1.5,
+        6: $h6-font-size * 1.5
+);
+
+$display-font-weight: $font-weight-light;
+$display-line-height: $headings-line-height;
+
+// Lead styles
+$lead-font-size: $font-size-base * 1.25;
+$lead-font-weight: $font-weight-light;
+
+
+//IMAGES
+$thumbnail-padding: .5rem;
+$thumbnail-bg: $gray-200;
+$thumbnail-border-color: $gray-500;
+$thumbnail-border-radius: 0;
+
+//FIGURE
+$figure-caption-font-size: $font-size-lg;
+$figure-caption-color: $body-color;
+
+
+//INPUTS
+
+//RANGE INPUT
+$form-range-track-height: 1rem;
+$form-range-thumb-width: 2rem;
+$form-range-thumb-border-radius: 2rem;
+
+
+//BREADCRUMB
+//$breadcrumb-divider: quote(">");
+
+//CARDS
+$card-height: 100%;
+
+//RATIOS
+// Create your own ratio map
+$custom-ratios: (
+        "1x2": calc(1 / 2 * 100%),
+        "2x3": calc(2 / 3 * 100%),
+        "3x4": calc(3 / 4 * 100%),
+        "4x5": calc(4 / 5 * 100%)
+);
+
+// Merge with "$aspect-ratios" map
+$aspect-ratios: map-merge($aspect-ratios, $custom-ratios);
+
+//UTILITY
+// Specify widths for border utility
+$border-widths: (
+        1: 2px,
+        2: 4px,
+        3: 6px,
+        4: 8px,
+        5: 10px
+);
+
+//SPACER
+// Specify spacer sizes
+$spacers: (
+        0: 0,
+        q: calc($spacer / 4),
+        h: calc($spacer / 2),
+        1: $spacer,
+        2: $spacer * 2,
+        3: $spacer * 3,
+        4: $spacer * 4,
+        5: $spacer * 5
+);
+
+//@import "../../scss/maps";
+//@import "../../scss/mixins";
+//@import "../../scss/root";
+
+@import "../../scss/bootstrap";
+//
+////Helpers
+//@import "../../scss/helpers";
+//
+////Utilities
+//@import "../../scss/utilities";
+//
+////Utilities API
+//@import "../../scss/utilities/api";
+

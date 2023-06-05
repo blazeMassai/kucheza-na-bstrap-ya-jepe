@@ -1,0 +1,57 @@
+
+/*@font-face {*/
+/*    font-family: 'PT Serif', serif;;*/
+/*    src: url('/dist/css/PT_Serif/PTSerif-Regular.ttf');*/
+/*}*/
+
+/**{*/
+/*    font-family: 'PT Serif', serif;*/
+/*}*/
+
+/*body {*/
+/*    background: rgba(0, 0, 0, 0);*/
+/*}*/
+a {
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    background-color: palevioletred;
+    border-radius: 5px;
+}
+
+
+span#big {
+    font-size: 1.8em;
+    color: #F9D949;
+    font-weight: 700;
+}
+span#mo{
+    font-size: 1.8em;
+}
+.breadcrumb{
+    /*background-color: var(--bs-gray-300);*/
+    /*background-color: 	#90EE90;*/
+    /*border-radius: 0;*/
+    /*padding: 1rem*/
+}
+
+.breadcrumb-item + .breadcrumb-item {
+    padding-left: 1rem;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    padding-right: 1rem;
+    content: ">";
+}
+
+.carousel .carousel-item {
+    height: 300px;
+}
+
+.carousel img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
