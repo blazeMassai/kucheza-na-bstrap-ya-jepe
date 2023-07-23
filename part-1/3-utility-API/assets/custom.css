@@ -4,7 +4,7 @@
     src: url('/dist/css/PT_Serif/PTSerif-Regular.ttf');
 }
 
-*{
+body{
     font-family: 'PT Serif', serif;
 }
 

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MoraDigi - Login</title>
+  <link rel="stylesheet" href="assets/css/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/login.css">
+
+</head>
+<body class="">
+
+<section class="h-100 gradient-form bg-gray-300">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-xl-10">
+                <div class="card mycard text-black">
+                    <div class="row g-0">
+                        <div class="col-lg-6">
+                            <div class="card-body p-md-3 mx-md-4">
+
+                                <div class="text-center">
+
+                                    <img src="assets/img/ANU-CLEAN3.png" style="width: 150px; height: 100px;" alt="logo">
+                                    <p class="mb-3 h3">Sign in.</p>
+
+                                </div>
+
+                                <form>
+                                    <div class="form-outline mb-3">
+                                        <label class="form-label h6" for="username">Username</label>
+                                        <input type="text" id="username" class="form-control form-control-lg" placeholder="" required/>
+                                    </div>
+
+                                    <div class="form-outline mb-4">
+                                        <label class="form-label h6" for="password">Password</label>
+                                        <input type="password" id="password" class="form-control form-control-lg" placeholder="" required/>
+                                    </div>
+
+
+
+                                    <div class="d-grid gap-2">
+                                        <button class="btn btn-tertiary btn-lg" type="submit" href="index.html">Login</button>
+                                    </div>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-flex align-items-center bg-tertiary">
+                            <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+<!--                                <h4 class="mb-4">Welcome to ANG Group.</h4>-->
+
+                                    <h1 class="ml6">
+                                        <span class="text-wrapper">
+                                          <span class="letters">Welcome to ANG Group.</span>
+                                        </span>
+                                    </h1>
+
+                                <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="assets/js/anime.min.js"></script>
+<!--<script src="assets/js/main.js"></script>-->
+<script>
+    // beautiful questions
+    // Wrap every letter in a span
+    var textWrapper = document.querySelector('.ml6 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({loop: true})
+        .add({
+            targets: '.ml6 .letter',
+            translateY: ["1.1em", 0],
+            translateZ: 0,
+            duration: 750,
+            delay: (el, i) => 50 * i
+        }).add({
+        targets: '.ml6',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+    });
+</script>
+</body>
+</html>

@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BiGMO - UtilityAPI</title>
     <!--    <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css">-->
-    <link rel="stylesheet" href="assets/dist/scss/utility-api.css">
+    <link rel="stylesheet" href="assets/dist/scss/uti-api.css">
     <link rel="stylesheet" href="assets/custom.css">
+
+
 </head>
-<body class="p-2">
+<body class="">
 
 <!--navbar-->
 <nav class="navbar navbar-expand-lg" style="background-color: #008080;">
@@ -22,26 +24,26 @@
                 <li class="nav-item">
                     <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="elements.html">Elements</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="images.html">Images</a>
-                </li>
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link text-light" href="">Elements</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link text-light" href="">Images</a>-->
+<!--                </li>-->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Components
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="forms.html">Forms</a></li>
-                        <li><a class="dropdown-item" href="utilities.html">Utilities</a></li>
+                        <li><a class="dropdown-item" href="">Forms</a></li>
+                        <li><a class="dropdown-item" href="">Utilities</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled text-light">Disabled</a>
-                </li>
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link disabled text-light">Disabled</a>-->
+<!--                </li>-->
             </ul>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -54,9 +56,9 @@
 
 
 <!--all other-->
-<div class="m-1">
+<div class="p-2">
     <!--carousel-->
-    <div class="container-fluid">
+    <div class="">
         <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -65,24 +67,24 @@
             </div>
             <div class="carousel-inner align-content-center">
                 <div class="carousel-item active">
-                    <img src="assets/img/h2r_2.jpg" class="d-block" alt="...">
+                    <img src="assets/img/bukur.jpg" class="d-block" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>KIWI H2R</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                        <h5>BMW M1KR</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat labore rerum sapiente sunt temporibus voluptatem!</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img/h2r_3.jpg" class="d-block" alt="...">
+                    <img src="assets/img/superduke.jpg" class="d-block" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>H2R PODS</h5>
-                        <p>Some representative placeholder content for the 2nd slide.</p>
+                        <h5>SUPERDUKE</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consectetur dolores doloribus eligendi expedita ipsa voluptatum.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img/p1-mac.jpg" class="d-block" alt="...">
+                    <img src="assets/img/m1000r.jpg" class="d-block" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>MAC P1</h5>
-                        <p>Some representative placeholder content for the 3rd slide.</p>
+                        <h5>M1000R</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque magni maiores porro.</p>
                     </div>
                 </div>
             </div>
@@ -110,6 +112,78 @@
 
     <!--end breadcrumbs-->
 
+<!--    font weights-->
+    <div class="container-fluid">
+        <h1>Font Weights</h1>
+        <h5>fw-light</h5>
+        <p class="fw-light-hover">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto at facilis laudantium magni molestias, optio placeat quas sint veritatis voluptatibus?</p>
+
+        <h5>fw-bold</h5>
+        <p class="fw-bold-hover">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias aperiam assumenda, commodi cumque error fuga ipsum iste odit perspiciatis?</p>
+
+        <h5>fw-bolder-hover</h5>
+        <p class="fw-bolder-hover">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias aperiam assumenda, commodi cumque error fuga ipsum iste odit perspiciatis?</p>
+
+    </div>
+    <hr>
+
+<!--    SPACING-->
+    <div class="container-fluid">
+        <h1>Spacing</h1>
+        <div style="margin: 1rem; padding: 1rem;" class="spacing-0 bg-myinfo">.spacing-0</div>
+        <div class="spacing-1 bg-mywarning">.spacing-1</div>
+        <div class="spacing-2 bg-mysuccess">.spacing-2</div>
+        <div class="spacing-3 bg-saddlebrown text-white">.spacing-3</div>
+        <div class="spacing-4 bg-tertiary text-white">.spacing-4</div>
+        <div class="spacing-5 bg-quaternary text-white">.spacing-5</div>
+    </div>
+
+    <hr>
+<!--    CURSOR -->
+    <div class="container-fluid">
+        <h1>Cursor</h1>
+        <p class="cursor-auto bg-tertiary w-50">.cursor-auto</p>
+        <p class="cursor-context-menu bg-warning w-50">.cursor-context-menu</p>
+        <p class="cursor-copy bg-mysuccess w-50">.cursor-copy</p>
+        <p class="cursor-grab bg-primary w-50">.cursor-grab</p>
+        <p class="cursor-help bg-danger-subtle w-50">.cursor-help</p>
+        <p class="cursor-pointer bg-dark-subtle w-50">.cursor-pointer</p>
+        <p class="cursor-wait bg-success-subtle w-50">.cursor-wait</p>
+    </div>
+
+    <hr>
+<!--    OPACITY-->
+    <div class="container">
+        <h3>All breakpoints</h3>
+
+        <p class="o-0">.o-0</p>
+        <p class="o-0-hover">.o-0-hover</p>
+        <p class="o-25">.o-25</p>
+        <p class="o-25-hover">.o-25-hover</p>
+        <p class="o-50">.o-50</p>
+        <p class="o-50-hover">.o-50-hover</p>
+        <p class="o-75">.o-75</p>
+        <p class="o-75-hover">.o-75-hover</p>
+        <p style="opacity: 0;" class="o-100">.o-100</p>
+        <p style="opacity: 0;" class="o-100-hover">.o-100-hover</p>
+
+
+        <h3>Breakpoint sm</h3>
+        <p class="o-sm-0">.o-sm-0</p>
+        <p class="o-sm-0-hover">.o-sm-0-hover</p>
+        <p class="o-sm-25">.o-sm-25</p>
+        <p class="o-sm-25-hover">.o-sm-25-hover</p>
+        <p class="o-sm-50">.o-sm-50</p>
+        <p class="o-sm-50-hover">.o-sm-50-hover</p>
+        <p class="o-sm-75">.o-sm-75</p>
+        <p class="o-sm-75-hover">.o-sm-75-hover</p>
+        <p style="opacity: 0;" class="o-sm-100">.o-sm-100</p>
+        <p style="opacity: 0;" class="o-sm-100-hover">.o-sm-100-hover</p>
+    </div>
+
+    <div class="container-fluid">
+        <h1>Modifying a utility</h1>
+    </div>
 
 
 </div>

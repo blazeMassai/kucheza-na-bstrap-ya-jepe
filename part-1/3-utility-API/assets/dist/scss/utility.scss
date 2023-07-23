@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+
+@import "../../scss/functions";
+@import "../../scss/variables";
+//@import "../../scss/maps";
+//@import "../../scss/mixins";
+//@import "../../scss/utilities";
+
+$enable-caret: true;
+$enable-rounded: false;
+$enable-shadows: true;
+$enable-gradients: true;
+$enable-transitions: true;
+//$enable-smooth-scroll: false;
+//$enable-grid-classes: false;
+//$enable-container-classes: false;
+//$enable-cssgrid: false;
+
+//$enable-button-pointers: false;
+
+//Responsive font sizes
+//$enable-rfs: false;
+
+
+//validation icons
+$enable-validation-icons: false;
+
+$enable-negative-margins: true;
+
+//$enable-important-utilities: false;
+
+//$enable-deprecation-messages: false;
+
+
+//SPACER VARIABLE
+//This variable specifies the default spacer value used by many other component variables in the _variables.scss file (as well as a few other places). It’s also used to programmatically generate the spacer utilities. Default value: 1rem
+
+//$spacer: 2rem;
+
+
+//CUSTOMIZING COLOR VARIABLES
+
+// Create background color classes from the "$grays" color map
+@each $color, $value in $grays {
+  .bg-gray-#{$color} {
+    background-color: $value;
+  }
+}
+
+@each $color, $value in $colors {
+  .bg-#{$color} {
+    background-color: $value;
+  }
+}
+
+//Tints and shades of blue
+@each $color, $value in $blues {
+  .bg-#{$color}{
+    background-color: $value;
+  }
+}
+
+
+//mixed-colors
+// Create a new "$mixed-colors" map
+$mixed-colors: (
+        "blue":$blue,
+        "green":green,
+        "saddlebrown": #8B4513,
+        "kijani-flani": #264653,
+        "red-flani": #F45050,
+        "primary": $primary,
+        "mysuccess": #2A9D8F,
+        "myinfo": #E9C46A,
+        "mywarning": #F4A261,
+        "mydanger": #E76F51
+);
+
+
+// Create color classes from the "$mixed-colors" map
+@each $color, $value in $mixed-colors{
+  .bg-#{$color} {
+    background-color: $value;
+  }
+}
+
+//Adding color to theme colors
+$custom-colors: (
+        "tertiary":$indigo,
+        "quaternary": $purple,
+        "quinary": $pink,
+        "senary": $orange,
+        "septenary": $teal
+);
+
+// Then Merge "$theme-colors" map and "$custom-colors" map
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+//$font-family-base:  'PT Serif', serif;
+$font-size-base: 1.2rem;
+//$line-height-base: 1.3;
+//$line-height-sm: 1;
+
+// Link styles
+$link-color: $indigo;
+$link-decoration: none;
+$link-hover-color: shift-color($link-color, $link-shade-percentage);
+$link-hover-decoration: none;
+
+//UTILITIES
+
+//$utilities: (
+//    "Font weight": (
+//            property: font-weight,
+//            values: 300 400 700,
+//            class: fw,
+//            local-vars: (
+//                    font-weight-opacity: 0.5
+//            )
+//    ),
+//    "Spacing": (
+//            property: margin padding,
+//            values: $spacers,
+//            class: spacing
+//    )
+//);
+
+$utilities: (
+        "Font weight": (
+                property: font-weight,
+                values: (light: 300, normal:400,  bold:700, bolder:bolder),
+                class: fw,
+                state: hover,
+                print: true,
+                local-vars: (
+                                      font-weight-opacity: 0.5
+                              )
+        ),
+        "Spacing": (
+                property: margin padding,
+                values: $spacers,
+                class: spacing
+        ),
+        //simple utility
+        "cursor": (
+                property: cursor,
+                values: auto context-menu copy grap help pointer wait
+        ),
+
+        //complex utility
+        "opacity": (
+                property: opacity,
+                values: (
+                        0: 0,
+                        25: .25,
+                        50: .5,
+                        75: .75,
+                        100: 1
+                ),
+                class: o,
+                state: hover,
+                responsive: true,
+                print: true
+        ),
+
+
+);
+
+
+//$utilities: map-merge(
+//                $utilities, (
+//                "margin-start": map-merge(
+//                                map-get($utilities, "margin-start"),
+//                                ( class: ml ),
+//                )
+//        )
+//);
+
+
+@import "../../scss/bootstrap";
+
+

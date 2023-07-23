@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MoraDigi - Tabs</title>
+  <link rel="stylesheet" href="assets/css/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body id="homePage" class="bg-gray-100">
+
+<header>
+  <nav class="navbar navbar-light bg-gray-400 navbar-expand-lg py-3">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="assets/img/ANU-CLEAN3.png" alt="" width="80" height="45">
+      </a>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse mb-2 mb-lg-0" id="navbar">
+        <ul class="navbar-nav mb-2 mb-lg-0 me-auto">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Elements
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="login.html">login</a></li>
+              <li><a class="dropdown-item" href="tabs.html">Tabs</a></li>
+              <li><a class="dropdown-item" href="vertical-tab.html">Vertical Tabs</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="student-list.html">Students</a></li>
+              <li><a class="dropdown-item" href="invoice.html">Invoice</a></li>
+              <li><a class="dropdown-item" href="delivery-note.html">DN</a></li>
+              <li><a class="dropdown-item" href="">Forms</a></li>
+              <li><a class="dropdown-item" href="">Utilities</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Anungo
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="dashboard.html">Dashbaord</a></li>
+              <li><a class="dropdown-item" href="employee-form.html">New Staff</a></li>
+              <li><a class="dropdown-item" href="">Vituo</a></li>
+              <li><a class="dropdown-item" href="returns.html">Returns</a></li>
+              <li><a class="dropdown-item" href="">Inventory</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="">Records</a></li>
+              <li><a class="dropdown-item" href="">Invoice</a></li>
+              <li><a class="dropdown-item" href="">DN</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="nav-item mb-2 mb-lg-0 me-0">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                welcome, <span class="fw-bold">Ree</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="">Change Password</a></li>
+                <li><a class="dropdown-item" href="">Log Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<section>
+  <div class="container mt-4">
+
+    <p class="display-6">Student Details</p>
+
+    <nav aria-label="breadcrumb" class="my-4">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Students list</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Student Details</li>
+      </ol>
+    </nav>
+
+    <!-- Tabs navs -->
+    <ul class="nav nav-tabs" id="taarifa" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#personal"  aria-controls="personal" aria-current="page" type="button" role="tab" aria-selected="true">Student Details</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab"   aria-controls="wazazi"  data-bs-target="#wazazi" type="button" role="tab"  aria-selected="false">Parents & Guardians</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  data-bs-toggle="tab"  aria-controls="academics"  data-bs-target="#academics" type="button" role="tab"  aria-selected="false">Academic Info</a>
+      </li>
+    </ul>
+    <!-- Tabs content -->
+    <div class="tab-content">
+
+
+     <div class="tab-pane fade show active"  id="personal" role="tabpanel">
+       <div class="row py-4">
+         <div class="col-lg-4">
+           <table class="table table-borderless table-hover">
+             <tbody>
+             <tr>
+               <td><h6>Personal Details</h6></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span>Name:</span></td>
+               <td><span class="h5">Ree Molls Molls</span></td>
+             </tr>
+             <tr>
+               <td><span>DOB:</span></td>
+               <td><span class="h5">7/3/2021</span></td>
+             </tr>
+             <tr>
+               <td><span>Age:</span></td>
+               <td><span class="h5">3</span></td>
+             </tr>
+             <tr>
+               <td><span>Date Joined:</span></td>
+               <td><span class="h5">15/2/2023</span></td>
+             </tr>
+             <tr>
+               <td><span>Date Joined:</span></td>
+               <td><span class="h5">15/2/2023</span></td>
+             </tr>
+
+             <tr>
+               <td><span>Health Status:</span></td>
+               <td><span class="h5">Allergic to sulphur fumes</span></td>
+             </tr>
+
+             </tbody>
+           </table>
+
+
+         </div>
+
+       </div>
+     </div>
+
+
+     <div class="tab-pane fade"  id="wazazi" role="tabpanel">
+       <div class="row py-4">
+
+         <div class="col-lg-4">
+           <table class="table table-borderless table-hover">
+             <tbody>
+             <tr>
+               <td><h4>Father's Details</h4></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span>Name:</span></td>
+               <td><span class="h5">Ree Molls Molls</span></td>
+             </tr>
+             <tr>
+               <td><span>Occupation:</span></td>
+               <td><span class="h5">Doctor</span></td>
+             </tr>
+             <tr>
+               <td><span>Mobile No:</span></td>
+               <td><span class="h5">3</span></td>
+             </tr>
+             <tr>
+               <td><span>House No:</span></td>
+               <td><span class="h5">541</span></td>
+             </tr>
+             <tr>
+               <td><span>Street:</span></td>
+               <td><span class="h5">Forest</span></td>
+             </tr>
+             <tr>
+               <td><span>Ward:</span></td>
+               <td><span class="h5">Meta</span></td>
+             </tr>
+
+             <tr>
+               <td><span>District:</span></td>
+               <td><span class="h5">Mbeya CBD</span></td>
+             </tr>
+             </tbody>
+           </table>
+         </div>
+
+         <div class="col-lg-4 shoto">
+           <table class="table table-borderless table-hover ms-5">
+             <tbody>
+             <tr>
+               <td><h4>Mother's Details</h4></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span>Name:</span></td>
+               <td><span class="h5">Ren Molls Molls</span></td>
+             </tr>
+             <tr>
+               <td><span>Occupation:</span></td>
+               <td><span class="h5">7/3/2021</span></td>
+             </tr>
+             <tr>
+               <td><span>Mobile No:</span></td>
+               <td><span class="h5">3</span></td>
+             </tr>
+             <tr>
+               <td><span>House No:</span></td>
+               <td><span class="h5">541</span></td>
+             </tr>
+             <tr>
+               <td><span>Street:</span></td>
+               <td><span class="h5">Forest</span></td>
+             </tr>
+             <tr>
+               <td><span>Ward:</span></td>
+               <td><span class="h5">Meta</span></td>
+             </tr>
+
+             <tr>
+               <td><span>District:</span></td>
+               <td><span class="h5">Mbeya CBD</span></td>
+             </tr>
+             </tbody>
+           </table>
+         </div>
+
+       </div>
+
+       <hr>
+
+       <div class="row py-3">
+         <div class="col-lg-4">
+           <table class="table table-borderless table-hover">
+             <tbody>
+             <tr>
+               <td><h4>Other Relatives</h4></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span>Name:</span></td>
+               <td><span class="h5">Gee Molls Molls</span></td>
+             </tr>
+             <tr>
+               <td><span>Relationship:</span></td>
+               <td><span class="h5">Aunty</span></td>
+             </tr>
+             <tr>
+               <td><span>Mobile No:</span></td>
+               <td><span class="h5">3</span></td>
+             </tr>
+             <tr>
+               <td><span>Occupation:</span></td>
+               <td><span class="h5">Teacher</span></td>
+             </tr>
+             <tr>
+               <td><span>Residency:</span></td>
+               <td><span class="h5">Sae</span></td>
+             </tr>
+             </tbody>
+           </table>
+         </div>
+
+         <div class="col-lg-4 shoto">
+           <table class="table table-borderless table-hover ms-5">
+             <tbody>
+             <tr>
+               <td><h4>Other Relatives</h4></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span>Name:</span></td>
+               <td><span class="h5">Flex Molls Molls</span></td>
+             </tr>
+             <tr>
+               <td><span>Relationship:</span></td>
+               <td><span class="h5">Uncle</span></td>
+             </tr>
+             <tr>
+               <td><span>Mobile No:</span></td>
+               <td><span class="h5">3</span></td>
+             </tr>
+             <tr>
+               <td><span>Occupation:</span></td>
+               <td><span class="h5">Teacher</span></td>
+             </tr>
+             <tr>
+               <td><span>Residency:</span></td>
+               <td><span class="h5">Sae</span></td>
+             </tr>
+             </tbody>
+           </table>
+         </div>
+
+       </div>
+     </div>
+
+     <div class="tab-pane"  id="academics" role="tabpanel">
+       <div class="row py-3">
+
+         <div class="col-lg-4">
+           <table class="table table-borderless table-hover">
+             <tbody>
+             <tr>
+               <td><h4>Admission Information</h4></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span>Registration No:</span></td>
+               <td><span class="h5">035</span></td>
+             </tr>
+             <tr>
+               <td><span>Class:</span></td>
+               <td><span class="h5">Baby Class</span></td>
+             </tr>
+             <tr>
+               <td><span>Registration date:</span></td>
+               <td><span class="h5">14-3-2023</span></td>
+             </tr>
+             </tbody>
+           </table>
+         </div>
+
+       </div>
+     </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

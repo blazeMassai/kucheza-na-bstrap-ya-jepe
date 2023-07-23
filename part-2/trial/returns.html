@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MoraDigi - Returns</title>
+    <link rel="stylesheet" href="assets/css/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="assets/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+
+</head>
+<body id="homePage">
+
+<header>
+    <nav class="navbar navbar-light bg-gray-400 navbar-expand-lg py-3">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="assets/img/ANU-CLEAN3.png" alt="" width="80" height="45">
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mb-2 mb-lg-0" id="navbar">
+                <ul class="navbar-nav mb-2 mb-lg-0 me-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Elements
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="login.html">login</a></li>
+                            <li><a class="dropdown-item" href="tabs.html">Tabs</a></li>
+                            <li><a class="dropdown-item" href="vertical-tab.html">Vertical Tabs</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="student-list.html">Students</a></li>
+                            <li><a class="dropdown-item" href="invoice.html">Invoice</a></li>
+                            <li><a class="dropdown-item" href="delivery-note.html">DN</a></li>
+                            <li><a class="dropdown-item" href="">Forms</a></li>
+                            <li><a class="dropdown-item" href="">Utilities</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Anungo
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="dashboard.html">Dashbaord</a></li>
+                            <li><a class="dropdown-item" href="employee-form.html">New Staff</a></li>
+                            <li><a class="dropdown-item" href="">Vituo</a></li>
+                            <li><a class="dropdown-item" href="returns.html">Returns</a></li>
+                            <li><a class="dropdown-item" href="">Inventory</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="">Records</a></li>
+                            <li><a class="dropdown-item" href="">Invoice</a></li>
+                            <li><a class="dropdown-item" href="">DN</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="nav-item mb-2 mb-lg-0 me-0">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                welcome, <span class="fw-bold">Ree</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="">Change Password</a></li>
+                                <li><a class="dropdown-item" href="">Log Out <i class="bi bi-box-arrow-in-right"></i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <nav aria-label="breadcrumb" class="my-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Returns</li>
+        </ol>
+    </nav>
+</div>
+
+
+
+<div class="container">
+
+
+    <section class="mb-5">
+        <h3 class="mb-4">Returns</h3>
+
+        <div class="d-flex justify-content-end mb-2">
+            <a href="new-return.html">
+
+                <button
+                        type="button"
+                        class="btn  btn-quaternary btn-floating"
+                        title="New Return"
+                >
+                    <i class="bi bi-plus text-lg"></i>
+                </button>
+
+            </a>
+        </div>
+
+        <table class="table table-bordered table-hover my-3" id="returns">
+            <thead>
+            <tr class="bg-gray-300 text-dark">
+                <th scope="col">#</th>
+                <th scope="col">Category</th>
+                <th scope="col">Control Number</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Payment Channel</th>
+                <th scope="col">GEPG Reference</th>
+                <th scope="col">Receipt number</th>
+                <th scope="col">Payment Date</th>
+                <th scope="col" class="text-center">Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>VAT</td>
+                <td>991122222</td>
+                <td>150,000</td>
+                <td>CRDB</td>
+                <td>45871111</td>
+                <td>78HI890</td>
+                <td>12/5/2022</td>
+                <td class="text-center">
+                    <a title="View" href=""><i class="bi bi-eye-fill text-quaternary h5"></i></a>
+                    <a title="Edit" href=""><i class="bi bi-pen text-senary h5"></i></a>
+                    <a title="Delete" href=""><i class="bi bi-trash text-danger h5"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>SDL(Standard Development Levy)</td>
+                <td>991122222</td>
+                <td>10,000</td>
+                <td>NMB</td>
+                <td>45871111</td>
+                <td>78HI890</td>
+                <td>12/5/2021</td>
+                <td class="text-center">
+                    <a title="View" href=""><i class="bi bi-eye-fill text-quaternary h5"></i></a>
+                    <a title="Edit" href=""><i class="bi bi-pen text-senary h5"></i></a>
+                    <a title="Delete" href=""><i class="bi bi-trash text-danger h5"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>PROVISION</td>
+                <td>991122222</td>
+                <td>100,000</td>
+                <td>NBC</td>
+                <td>45871111</td>
+                <td>78HI890</td>
+                <td>10/1/2022</td>
+                <td class="text-center">
+                    <a title="View" href=""><i class="bi bi-eye-fill text-quaternary h5"></i></a>
+                    <a title="Edit" href=""><i class="bi bi-pen text-senary h5"></i></a>
+                    <a title="Delete" href=""><i class="bi bi-trash text-danger h5"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>SDL(Standard Development Levy)</td>
+                <td>991122875</td>
+                <td>150,000</td>
+                <td>CRDB</td>
+                <td>45871111</td>
+                <td>78HI890</td>
+                <td>12/5/2020</td>
+                <td class="text-center">
+                    <a title="View" href=""><i class="bi bi-eye-fill text-quaternary h5"></i></a>
+                    <a title="Edit" href=""><i class="bi bi-pen text-senary h5"></i></a>
+                    <a title="Delete" href=""><i class="bi bi-trash text-danger h5"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>SDL(Standard Development Levy)</td>
+                <td>991124985</td>
+                <td>150,000</td>
+                <td>CRDB</td>
+                <td>45871111</td>
+                <td>78HI890</td>
+                <td>12/5/2022</td>
+                <td class="text-center">
+                    <a title="View" href=""><i class="bi bi-eye-fill text-quaternary h5"></i></a>
+                    <a title="Edit" href=""><i class="bi bi-pen text-senary h5"></i></a>
+                    <a title="Delete" href=""><i class="bi bi-trash text-danger h5"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td>PROVISION</td>
+                <td>9911222000</td>
+                <td>150,000</td>
+                <td>NMB</td>
+                <td>45871111</td>
+                <td>78HI890</td>
+                <td>12/5/2022</td>
+                <td class="text-center">
+                    <a title="View" href=""><i class="bi bi-eye-fill text-quaternary h5"></i></a>
+                    <a title="Edit" href=""><i class="bi bi-pen text-senary h5"></i></a>
+                    <a title="Delete" href=""><i class="bi bi-trash text-danger h5"></i></a>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+
+    </section>
+</div>
+
+
+<script src="assets/js/jquery-2.2.4.min.js"></script>
+<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/dist/js/jquery.dataTables.min.js"></script>
+<script src="assets/dist/js/dataTables.bootstrap5.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#returns').dataTable();
+
+    } );
+
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MoraDigi - Students</title>
+    <link rel="stylesheet" href="assets/css/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="assets/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="assets/css/buttons.bootstrap5.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body id="students" class="bg-gray-100">
+
+<header>
+    <nav class="navbar navbar-light bg-gray-400 navbar-expand-lg py-3">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="assets/img/ANU-CLEAN3.png" alt="" width="80" height="45">
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mb-2 mb-lg-0" id="navbar">
+                <ul class="navbar-nav mb-2 mb-lg-0 me-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Elements
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="login.html">login</a></li>
+                            <li><a class="dropdown-item" href="tabs.html">Tabs</a></li>
+                            <li><a class="dropdown-item" href="vertical-tab.html">Vertical Tabs</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="student-list.html">Students</a></li>
+                            <li><a class="dropdown-item" href="invoice.html">Invoice</a></li>
+                            <li><a class="dropdown-item" href="delivery-note.html">DN</a></li>
+                            <li><a class="dropdown-item" href="">Forms</a></li>
+                            <li><a class="dropdown-item" href="">Utilities</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Anungo
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="dashboard.html">Dashbaord</a></li>
+                            <li><a class="dropdown-item" href="employee-form.html">New Staff</a></li>
+                            <li><a class="dropdown-item" href="">Vituo</a></li>
+                            <li><a class="dropdown-item" href="returns.html">Returns</a></li>
+                            <li><a class="dropdown-item" href="">Inventory</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="">Records</a></li>
+                            <li><a class="dropdown-item" href="">Invoice</a></li>
+                            <li><a class="dropdown-item" href="">DN</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="nav-item mb-2 mb-lg-0 me-0">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                welcome, <span class="fw-bold">Ree</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="">Change Password</a></li>
+                                <li><a class="dropdown-item" href="">Log Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <nav aria-label="breadcrumb" class="my-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Students</li>
+        </ol>
+    </nav>
+</div>
+
+<div class="container">
+    <section class="mb-5">
+        <h3 class="mb-4">Students List</h3>
+
+        <div class="d-flex justify-content-end mb-2">
+            <button
+                    type="button"
+                    class="btn  btn-quaternary btn-floating"
+                    title="New Student"
+            >
+                <i class="bi bi-plus text-lg"></i>
+            </button>
+        </div>
+
+        <table class="table table-bordered table-hover my-3" id="mytable">
+            <thead>
+            <tr class="bg-gray-300 text-dark">
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+                <th scope="col" class="text-center">Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td  class="text-center">
+                    <a title="View" href=""><i class="bi bi-eye-fill text-quaternary h5"></i></a>
+                    <a title="Edit" href=""><i class="bi bi-pen text-senary h5"></i></a>
+                    <a title="Delete" href=""><i class="bi bi-trash text-danger h5"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td class="text-center">
+                    <a title="View" href=""><i class="bi bi-eye-fill text-quaternary h5"></i></a>
+                    <a title="Edit" href=""><i class="bi bi-pen text-senary h5"></i></a>
+                    <a title="Delete" href=""><i class="bi bi-trash text-danger h5"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Larry the Bird</td>
+                <td>Thornton</td>
+                <td>@twitter</td>
+                <td class="text-center">
+                    <a title="View" href=""><i class="bi bi-eye-fill text-quaternary h5"></i></a>
+                    <a title="Edit" href=""><i class="bi bi-pen text-senary h5"></i></a>
+                    <a title="Delete" href=""><i class="bi bi-trash text-danger h5"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>Larry the Bird</td>
+                <td>Thornton</td>
+                <td>@twitter</td>
+                <td class="text-center">
+                    <a title="View" href=""><i class="bi bi-eye-fill text-quaternary h5"></i></a>
+                    <a title="Edit" href=""><i class="bi bi-pen text-senary h5"></i></a>
+                    <a title="Delete" href=""><i class="bi bi-trash text-danger h5"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>Larry the Bird</td>
+                <td>Thornton</td>
+                <td>@twitter</td>
+                <td class="text-center">
+                    <a title="View" href=""><i class="bi bi-eye-fill text-quaternary h5"></i></a>
+                    <a title="Edit" href=""><i class="bi bi-pen text-senary h5"></i></a>
+                    <a title="Delete" href=""><i class="bi bi-trash text-danger h5"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td>Larry the Bird</td>
+                <td>Thornton</td>
+                <td>@twitter</td>
+                <td class="text-center">
+                    <a title="View" href=""><i class="bi bi-eye-fill text-quaternary h5"></i></a>
+                    <a title="Edit" href=""><i class="bi bi-pen text-senary h5"></i></a>
+                    <a title="Delete" href=""><i class="bi bi-trash text-danger h5"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">7</th>
+                <td>Larry the Bird</td>
+                <td>Thornton</td>
+                <td>@twitter</td>
+                <td class="text-center">
+                    <a title="View" href=""><i class="bi bi-eye-fill text-quaternary h5"></i></a>
+                    <a title="Edit" href=""><i class="bi bi-pen text-senary h5"></i></a>
+                    <a title="Delete" href=""><i class="bi bi-trash text-danger h5"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">8</th>
+                <td>Larry the Bird</td>
+                <td>Thornton</td>
+                <td>@twitter</td>
+                <td class="text-center">
+                    <a title="View" href=""><i class="bi bi-eye-fill text-quaternary h5"></i></a>
+                    <a title="Edit" href=""><i class="bi bi-pen text-senary h5"></i></a>
+                    <a title="Delete" href=""><i class="bi bi-trash text-danger h5"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">9</th>
+                <td>Larry the Bird</td>
+                <td>Thornton</td>
+                <td>@twitter</td>
+                <td class="text-center">
+                    <a title="View" href=""><i class="bi bi-eye-fill text-quaternary h5"></i></a>
+                    <a title="Edit" href=""><i class="bi bi-pen text-senary h5"></i></a>
+                    <a title="Delete" href=""><i class="bi bi-trash text-danger h5"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">10</th>
+                <td>Larry the Bird</td>
+                <td>Thornton</td>
+                <td>@twitter</td>
+                <td class="text-center">
+                    <a title="View" href=""><i class="bi bi-eye-fill text-quaternary h5"></i></a>
+                    <a title="Edit" href=""><i class="bi bi-pen text-senary h5"></i></a>
+                    <a title="Delete" href=""><i class="bi bi-trash text-danger h5"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">11</th>
+                <td>Larry the Bird</td>
+                <td>Thornton</td>
+                <td>@twitter</td>
+                <td class="text-center">
+                    <a title="View" href=""><i class="bi bi-eye-fill text-quaternary h5"></i></a>
+                    <a title="Edit" href=""><i class="bi bi-pen text-senary h5"></i></a>
+                    <a title="Delete" href=""><i class="bi bi-trash text-danger h5"></i></a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+    </section>
+</div>
+
+
+<footer class="bg-light">
+    <div class="container py-5">
+        <div class="text-center">&copy;<span id="year"></span><a href=""> SnowBlinds. All rights reserved.</a></div>
+    </div>
+</footer>
+
+
+<!--<script src="assets/dist/js/jquery-3.7.0.min.js"></script>-->
+<script src="assets/js/jquery-2.2.4.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/dist/js/jquery.dataTables.min.js"></script>
+<script src="assets/dist/js/dataTables.bootstrap5.min.js"></script>
+<script src="assets/dist/js/dataTables.buttons.min.js"></script>
+<script src="assets/dist/js/buttons.bootstrap5.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script src="assets/js/jszip.min.js"></script>
+<!--<script src="assets/js/dataTables.buttons.min.js"></script>-->
+<script src="assets/js/pdfmake.min.js"></script>
+<script src="assets/js/buttons.html5.min.js"></script>
+<script src="assets/js/dataTables.select.min.js"></script>
+<script src="assets/js/vfs_fonts.js"></script>
+<!--<script src="assets/js/buttons.bootstrap4.min.js"></script>-->
+<script src="assets/js/buttons.print.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#mytable').dataTable( {
+            // responsive: true,
+
+
+            dom: 'Bfrtip',
+            buttons: [
+                'pageLength',
+                'copyHtml5',
+                'excelHtml5',
+                'csvHtml5',
+                'pdfHtml5',
+                'print',
+
+            ],
+            "lengthMenu": [ [10, 25, 50, -1], [10, 25, 50, "All"] ],
+            // orientation: 'landscape',
+
+            // Naanza footer sum
+
+            // "footerCallback": function ( row, data, start, end, display ) {
+            //     var api = this.api(), data;
+
+                // Remove the formatting to get integer data for summation
+                // var intVal = function ( i ) {
+                //     return typeof i === 'string' ?
+                //         i.replace(/[\$,]/g, '')*1 :
+                //         typeof i === 'number' ?
+                //             i : 0;
+                // };
+
+                // Total over all pages
+                // total = api
+                //     .column( 5 )
+                //     .data()
+                //     .reduce( function (a, b) {
+                //         return intVal(a) + intVal(b);
+                //     }, 0 );
+
+                // Total over this page
+                // pageTotal = api
+                //     .column( 5, { page: 'current'} )
+                //     .data()
+                //     .reduce( function (a, b) {
+                //         return intVal(a) + intVal(b);
+                //     }, 0 );
+
+                // Update footer
+                // $( api.column( 5 ).footer() ).html(
+                //     '$'+pageTotal +' ( $'+ total +' total)'
+                // );
+            // }
+
+            //end footer sum
+
+        } );
+
+    } );
+
+</script>
+
+<script>
+
+    //initialise scroll spy
+
+
+    function exportTableToExcel(tableID, filename = ''){
+        var downloadLink;
+        var dataType = 'application/vnd.ms-excel';
+        var tableSelect = document.getElementById(tableID);
+        var tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
+
+        // Specify file name
+        filename = filename?filename+'.xls':'excel_data.xls';
+
+        // Create download link element
+        downloadLink = document.createElement("a");
+
+        document.body.appendChild(downloadLink);
+
+        if(navigator.msSaveOrOpenBlob){
+            var blob = new Blob(['\ufeff', tableHTML], {
+                type: dataType
+            });
+            navigator.msSaveOrOpenBlob( blob, filename);
+        }else{
+            // Create a link to the file
+            downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
+
+            // Setting the file name
+            downloadLink.download = filename;
+
+            //triggering the function
+            downloadLink.click();
+        }
+    }
+
+</script>
+
+
+
+</body>
+</html>

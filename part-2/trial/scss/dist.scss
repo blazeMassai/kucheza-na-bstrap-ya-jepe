@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+@import "./functions";
+@import "./variables";
+
+
+
+$enable-rounded: false;
+
+//$body-bg: $gray-100;
+//$body-color: $gray-700;
+
+$font-size-base: 1.1rem;
+
+$link-color: $indigo;
+$nav-pills-link-active-bg:  $purple;
+//$nav-link-color: $purple;
+$breadcrumb-divider: quote(" > ");
+
+  //CUSTOMIZING COLOR VARIABLES
+
+// Create background color classes from the "$grays" color map
+@each $color, $value in $grays {
+  .bg-gray-#{$color} {
+    background-color: $value;
+  }
+}
+
+@each $color, $value in $colors {
+  .bg-#{$color} {
+    background-color: $value;
+  }
+}
+
+//Tints and shades of blue
+@each $color, $value in $blues {
+  .bg-#{$color}{
+    background-color: $value;
+  }
+}
+
+
+//mixed-colors
+// Create a new "$mixed-colors" map
+$mixed-colors: (
+        "blue":$blue,
+        "green":green,
+        "saddlebrown": #8B4513,
+        "kijani-flani": #264653,
+        "red-flani": #F45050,
+        "primary": $primary,
+        "mysuccess": #2A9D8F,
+        "myinfo": #E9C46A,
+        "mywarning": #F4A261,
+        "mydanger": #E76F51
+);
+
+$form-invalid-border-color:   #E0908D;
+
+// Create color classes from the "$mixed-colors" map
+@each $color, $value in $mixed-colors{
+  .bg-#{$color} {
+    background-color: $value;
+  }
+}
+
+//Adding color to theme colors
+$custom-colors: (
+        "tertiary":$indigo,
+        "quaternary": $purple,
+        "quinary": $pink,
+        "senary": $orange,
+        "septenary": $teal,
+        "lightpurple": #9681EB,
+        "kijanihadimu": #45CFDD,
+        "grayhadimu": #E7EAEF
+);
+
+$input-border-color:                    $purple-100;
+
+$utilities: (
+        "Font weight": (
+                property: font-weight,
+                values: (light: 300, normal:400,  bold:700, bolder:bolder),
+                class: fw,
+                state: hover,
+                print: true,
+                local-vars: (
+                        font-weight-opacity: 0.5
+                )
+        ),
+        "Spacing": (
+                property: margin padding,
+                values: $spacers,
+                class: spacing
+        ),
+  //simple utility
+        "cursor": (
+                property: cursor,
+                values: auto context-menu copy grap help pointer wait
+        ),
+
+  //complex utility
+        "opacity": (
+                property: opacity,
+                values: (
+                        0: 0,
+                        25: .25,
+                        50: .5,
+                        75: .75,
+                        100: 1
+                ),
+                class: o,
+                state: hover,
+                responsive: true,
+                print: true
+        ),
+
+
+);
+
+
+
+
+// Then Merge "$theme-colors" map and "$custom-colors" map
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "./bootstrap";
